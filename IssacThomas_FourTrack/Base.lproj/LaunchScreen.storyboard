@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.issacthomas.co.uk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dR2-rj-drQ">
+                                <rect key="frame" x="3" y="276" width="661" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CassetteFrame1" translatesAutoresizingMaskIntoConstraints="NO" id="i6R-Jq-2H0">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="231"/>
+                                <color key="tintColor" red="0.79028671979999998" green="0.8505083323" blue="0.89227801559999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOUR TRACK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0V3-uA-mRt">
+                                <rect key="frame" x="223" y="223" width="221" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.82005518669999999" green="0.80011528730000003" blue="0.79149806499999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0V3-uA-mRt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="223" id="8v9-Ik-q8B"/>
+                            <constraint firstItem="i6R-Jq-2H0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AK6-J3-ABv"/>
+                            <constraint firstItem="i6R-Jq-2H0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FIm-vD-ylc"/>
+                            <constraint firstItem="0V3-uA-mRt" firstAttribute="centerX" secondItem="i6R-Jq-2H0" secondAttribute="centerX" id="OFv-ce-usX"/>
+                            <constraint firstItem="dR2-rj-drQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="3" id="RUE-Ws-f6B"/>
+                            <constraint firstItem="dR2-rj-drQ" firstAttribute="top" secondItem="i6R-Jq-2H0" secondAttribute="bottom" constant="45" id="Vod-LO-CHk"/>
+                            <constraint firstItem="dR2-rj-drQ" firstAttribute="top" secondItem="0V3-uA-mRt" secondAttribute="bottom" constant="8" id="dMI-uc-5r4"/>
+                            <constraint firstItem="0V3-uA-mRt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="223" id="j6e-Uu-5SS"/>
+                            <constraint firstItem="dR2-rj-drQ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="kVK-NZ-L8j"/>
+                            <constraint firstItem="0V3-uA-mRt" firstAttribute="centerX" secondItem="dR2-rj-drQ" secondAttribute="centerX" id="rdz-mG-2bj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dR2-rj-drQ" secondAttribute="bottom" constant="64" id="xt4-Ct-lUb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.623688155922046" y="373.60000000000002"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CassetteFrame1" width="903" height="327"/>
+    </resources>
+</document>

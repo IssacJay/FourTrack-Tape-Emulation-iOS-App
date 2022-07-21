@@ -1,0 +1,926 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ViewController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="PerformVC" id="BYZ-38-t0r" userLabel="ViewController" customClass="ViewController" customModule="IssacThomas_FourTrack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="QIx-dD-ymR" userLabel="VolumeKnobs">
+                                <rect key="frame" x="11" y="5" width="90" height="367"/>
+                                <subviews>
+                                    <view opaque="NO" tag="1" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Q5b-KJ-0Hq" userLabel="volume_Knob1" customClass="ImageKnob" customModule="IssacThomas_FourTrack" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="91"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="91" id="Ifb-kH-BF1"/>
+                                            <constraint firstAttribute="width" constant="90" id="bom-24-4Ig"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="totalFrames">
+                                                <integer key="value" value="60"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="Tascam_volume_"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="minimum">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="maximum">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view opaque="NO" tag="2" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="lkc-Vd-2mq" userLabel="volume_Knob2" customClass="ImageKnob" customModule="IssacThomas_FourTrack" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="93" width="90" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="OEb-08-Uin"/>
+                                            <constraint firstAttribute="width" constant="90" id="die-B9-ayD"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="totalFrames">
+                                                <integer key="value" value="60"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="Tascam_volume_"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="minimum">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="maximum">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view opaque="NO" tag="3" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="7Rx-CC-oc4" userLabel="volume_Knob3" customClass="ImageKnob" customModule="IssacThomas_FourTrack" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="185" width="90" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="tTK-3d-L3n"/>
+                                            <constraint firstAttribute="width" constant="90" id="uU1-BT-2EH"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="totalFrames">
+                                                <integer key="value" value="60"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="Tascam_volume_"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="minimum">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="maximum">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view opaque="NO" tag="4" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="KWg-Wq-bYI" userLabel="volume_Knob4" customClass="ImageKnob" customModule="IssacThomas_FourTrack" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="277" width="90" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="256-mW-oTc"/>
+                                            <constraint firstAttribute="width" constant="90" id="4Zj-hV-D4E"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="totalFrames">
+                                                <integer key="value" value="60"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="Tascam_volume_"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="minimum">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="maximum">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="noJ-SZ-kFs" userLabel="PanKnobs">
+                                <rect key="frame" x="110" y="5" width="90.5" height="367"/>
+                                <subviews>
+                                    <view opaque="NO" tag="1" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="V5C-ej-d1A" userLabel="pan_Knob1" customClass="ImageKnob" customModule="IssacThomas_FourTrack" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="90.5" height="91"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90.5" id="9bK-cw-qjt"/>
+                                            <constraint firstAttribute="height" constant="91" id="bnz-yg-kXX"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="totalFrames">
+                                                <integer key="value" value="60"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="Tascam_pan_"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="minimum">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="maximum">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view opaque="NO" tag="2" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Vvs-rk-Gmy" userLabel="pan_Knob2" customClass="ImageKnob" customModule="IssacThomas_FourTrack" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="93" width="90.5" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90.5" id="jHE-dR-O77"/>
+                                            <constraint firstAttribute="height" constant="90" id="odQ-Oo-cLl"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="totalFrames">
+                                                <integer key="value" value="60"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="Tascam_pan_"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="minimum">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="maximum">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view opaque="NO" tag="3" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="mzT-P3-5m0" userLabel="pan_Knob3" customClass="ImageKnob" customModule="IssacThomas_FourTrack" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="185" width="90.5" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90.5" id="vz0-Zy-EQh"/>
+                                            <constraint firstAttribute="height" constant="90" id="zVR-Wt-rxv"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="totalFrames">
+                                                <integer key="value" value="60"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="Tascam_pan_"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="minimum">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="maximum">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view opaque="NO" tag="4" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="tBX-ZT-pp7" userLabel="pan_Knob4" customClass="ImageKnob" customModule="IssacThomas_FourTrack" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="277" width="90.5" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90.5" id="ThZ-oi-JlI"/>
+                                            <constraint firstAttribute="height" constant="90" id="qZP-6p-Pmb"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="totalFrames">
+                                                <integer key="value" value="60"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="Tascam_pan_"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="minimum">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="maximum">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ZH8-Z8-0aU">
+                                <rect key="frame" x="600" y="7" width="56" height="56"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmd-4l-9fK">
+                                <rect key="frame" x="467.5" y="315" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="0Ou-lJ-gay"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="F74-GV-EOK"/>
+                                    <constraint firstAttribute="height" constant="30" id="Pgo-DB-F3d"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemGray5Color"/>
+                                <state key="normal" image="stop.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zSg-Yi-Fgk"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="fxm-0A-yAI" userLabel="Track1">
+                                <rect key="frame" x="230" y="14" width="153" height="66.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRACK 1   " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cns-xH-mrk">
+                                        <rect key="frame" x="0.0" y="0.0" width="153" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="cy1-t6-BpF"/>
+                                            <constraint firstAttribute="width" constant="153" id="eKO-gM-3Ft"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="1" contentMode="scaleAspectFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ke-3K-98e" userLabel="OpenTrack1">
+                                        <rect key="frame" x="0.0" y="23" width="153" height="18.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="tintColor" systemColor="systemGray5Color"/>
+                                        <state key="normal" title=" Open">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <imageReference key="image" image="waveform.path.ecg.rectangle.fill" catalog="system" symbolScale="medium"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openAudioFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CQ1-wJ-RkU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleAspectFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uzi-nt-hdn" userLabel="RecordTrack2">
+                                        <rect key="frame" x="0.0" y="47.5" width="153" height="19"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="tintColor" systemColor="systemGray5Color"/>
+                                        <state key="normal" title=" Record Enable" image="circle.fill" catalog="system">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="recordButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mKh-yb-gtk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="2lN-ti-NQA" userLabel="Track 4">
+                                <rect key="frame" x="230" y="285.5" width="153" height="66"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRACK 4   " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIq-wU-cZd">
+                                        <rect key="frame" x="0.0" y="0.0" width="153" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="153" id="jKF-nC-Pqd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="4" contentMode="scaleAspectFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95K-EE-HPP" userLabel="OpenTrack4">
+                                        <rect key="frame" x="0.0" y="24.5" width="153" height="18.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="153" id="MAo-4B-fkb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="tintColor" systemColor="systemGray5Color"/>
+                                        <state key="normal" title="Open">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <imageReference key="image" image="waveform.path.ecg.rectangle.fill" catalog="system" symbolScale="medium"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openAudioFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2aV-e9-pVe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleAspectFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHc-Ez-wiq" userLabel="RecordTrack4">
+                                        <rect key="frame" x="0.0" y="47" width="153" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="153" id="qgc-rQ-UIQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="tintColor" systemColor="systemGray5Color"/>
+                                        <state key="normal" title="Record Enable" image="circle.fill" catalog="system">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="recordButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wTi-0o-oR2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3m-sP-TX6" userLabel="Effect Button">
+                                <rect key="frame" x="605.5" y="315" width="34.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34.5" id="YeS-XP-cgN"/>
+                                    <constraint firstAttribute="height" constant="30" id="joP-4w-CkZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" systemColor="systemGray5Color"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="dial.min.fill" catalog="system" symbolScale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="effectViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U3u-uc-W50"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HqI-ZR-OXF" userLabel="Effect Button">
+                                <rect key="frame" x="534.5" y="315" width="34" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2s1-8t-m2p"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="34" id="D43-0m-n0p"/>
+                                    <constraint firstAttribute="width" constant="34" id="h0S-G9-lLO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" systemColor="systemGray5Color"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="questionmark.circle.fill" catalog="system" symbolScale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="helpViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zNj-mg-Awz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sco-fs-YsQ">
+                                <rect key="frame" x="400" y="315" width="29.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AhW-lV-6Q5"/>
+                                    <constraint firstAttribute="width" constant="29.5" id="RNU-Hr-R1F"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="f6O-dy-ZHf"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemGray5Color"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="circle.fill" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="startRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zTs-oR-Sj0"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CassetteFrame1" translatesAutoresizingMaskIntoConstraints="NO" id="meV-Db-czi">
+                                <rect key="frame" x="390" y="115" width="253" height="106"/>
+                            </imageView>
+                            <view opaque="NO" tag="1" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="JJ4-Zi-HHa" userLabel="pitch_Knob" customClass="ImageKnob" customModule="IssacThomas_FourTrack" customModuleProvider="target">
+                                <rect key="frame" x="390" y="14" width="85" height="85"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalFrames">
+                                        <integer key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="Pitch_"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minimum">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maximum">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view opaque="NO" tag="1" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="OTD-cG-VxD" userLabel="output_Knob" customClass="ImageKnob" customModule="IssacThomas_FourTrack" customModuleProvider="target">
+                                <rect key="frame" x="490" y="14" width="85" height="85"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalFrames">
+                                        <integer key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="Output_"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minimum">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maximum">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                        <real key="value" value="2.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="3yl-Hh-C0e" userLabel="Track2">
+                                <rect key="frame" x="230" y="102.5" width="153" height="66"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRACK 2   " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S67-Uj-QqV">
+                                        <rect key="frame" x="0.0" y="0.0" width="153" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="153" id="evL-vv-u0n"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="2" contentMode="scaleAspectFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOT-ev-xqJ" userLabel="OpenTrack2">
+                                        <rect key="frame" x="0.0" y="24.5" width="153" height="18.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="153" id="8yj-Lr-dFo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="tintColor" systemColor="systemGray5Color"/>
+                                        <state key="normal" title=" Open">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <imageReference key="image" image="waveform.path.ecg.rectangle.fill" catalog="system" symbolScale="medium"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openAudioFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pw6-XQ-Ta5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleAspectFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Muo-4z-kMs" userLabel="RecordTrack2">
+                                        <rect key="frame" x="0.0" y="47" width="153" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="153" id="YcI-JM-T0m"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="tintColor" systemColor="systemGray5Color"/>
+                                        <state key="normal" title="Record Enable" image="circle.fill" catalog="system">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="recordButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8WP-k9-RMR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="QUS-hq-KxA" userLabel="Track 3">
+                                <rect key="frame" x="230" y="191.5" width="153" height="66"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRACK 3   " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFQ-ct-0xa">
+                                        <rect key="frame" x="0.0" y="0.0" width="153" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="153" id="EMg-Uy-uXi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="3" contentMode="scaleAspectFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTG-SE-p67" userLabel="OpenTrack3">
+                                        <rect key="frame" x="0.0" y="24.5" width="153" height="18.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="153" id="ziv-gk-KaC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="tintColor" systemColor="systemGray5Color"/>
+                                        <state key="normal" title="Open">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <imageReference key="image" image="waveform.path.ecg.rectangle.fill" catalog="system" symbolScale="medium"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openAudioFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Bi-TO-L23"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleAspectFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vx9-ok-6rJ" userLabel="RecordTrack3">
+                                        <rect key="frame" x="0.0" y="47" width="153" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="153" id="D6D-OD-ijP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="tintColor" systemColor="systemGray5Color"/>
+                                        <state key="normal" title="Record Enable" image="circle.fill" catalog="system">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="recordButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jeD-ke-1uU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <switch opaque="NO" alpha="0.10000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9v0-62-qh3">
+                                <rect key="frame" x="600" y="35" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="x4A-US-7Ps"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemGray5Color"/>
+                                <color key="onTintColor" red="0.82005518669999999" green="0.80011528730000003" blue="0.79149806499999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" red="0.82005518669999999" green="0.80011528730000003" blue="0.79149806499999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="reverseSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="vNc-sV-xVz"/>
+                                </connections>
+                            </switch>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Reverse_Switch_0" translatesAutoresizingMaskIntoConstraints="NO" id="iLr-Td-hhs">
+                                <rect key="frame" x="600" y="19" width="56" height="56.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REVERSE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyW-df-5ef">
+                                <rect key="frame" x="594" y="83" width="61" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="YlU-kc-FvK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.91735559700000002" green="0.92112141849999996" blue="0.95005863899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="RECORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFi-rf-Cfp">
+                                <rect key="frame" x="390" y="353" width="49.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="EFFECTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12W-VC-KpN">
+                                <rect key="frame" x="597" y="353" width="52" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="HELP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9LT-Bx-Jvg">
+                                <rect key="frame" x="537" y="352" width="31" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOUR TRACK - TAPE EMULATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54z-7y-sLb">
+                                <rect key="frame" x="391" y="278" width="265" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="Boa-F0-hUj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="STOP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bi-Oy-BiN">
+                                <rect key="frame" x="459.5" y="353" width="46" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.82005518669999999" green="0.80011528730000003" blue="0.79149806499999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2lN-ti-NQA" firstAttribute="top" secondItem="QUS-hq-KxA" secondAttribute="bottom" constant="28" id="1Hs-1F-hEm"/>
+                            <constraint firstItem="OTD-cG-VxD" firstAttribute="height" secondItem="JJ4-Zi-HHa" secondAttribute="height" id="1pr-2R-Bs5"/>
+                            <constraint firstItem="9LT-Bx-Jvg" firstAttribute="centerY" secondItem="12W-VC-KpN" secondAttribute="centerY" id="1xO-3H-Dr4"/>
+                            <constraint firstItem="QIx-dD-ymR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="2T3-ch-3ct"/>
+                            <constraint firstItem="ZH8-Z8-0aU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="7" id="3Jp-ZK-pGc"/>
+                            <constraint firstItem="12W-VC-KpN" firstAttribute="baseline" secondItem="HFi-rf-Cfp" secondAttribute="firstBaseline" id="3NN-Tz-9U5"/>
+                            <constraint firstItem="OTD-cG-VxD" firstAttribute="leading" secondItem="JJ4-Zi-HHa" secondAttribute="trailing" constant="15" id="3e7-k6-9Ah"/>
+                            <constraint firstItem="JJ4-Zi-HHa" firstAttribute="leading" secondItem="fxm-0A-yAI" secondAttribute="trailing" constant="7" id="4CO-oX-Uv7"/>
+                            <constraint firstItem="lyW-df-5ef" firstAttribute="top" secondItem="ZH8-Z8-0aU" secondAttribute="bottom" constant="20" id="4iw-rI-9hx"/>
+                            <constraint firstItem="meV-Db-czi" firstAttribute="top" secondItem="JJ4-Zi-HHa" secondAttribute="bottom" constant="16" id="5Pb-KS-Zc9"/>
+                            <constraint firstItem="QUS-hq-KxA" firstAttribute="top" secondItem="3yl-Hh-C0e" secondAttribute="bottom" constant="23" id="7cL-Df-gv5"/>
+                            <constraint firstItem="Sco-fs-YsQ" firstAttribute="top" secondItem="lmd-4l-9fK" secondAttribute="top" id="A41-Ac-txz"/>
+                            <constraint firstItem="HFi-rf-Cfp" firstAttribute="baseline" secondItem="5bi-Oy-BiN" secondAttribute="firstBaseline" id="A9E-IQ-xfZ"/>
+                            <constraint firstItem="lyW-df-5ef" firstAttribute="top" secondItem="9v0-62-qh3" secondAttribute="bottom" constant="17" id="Ags-yi-I0G"/>
+                            <constraint firstItem="54z-7y-sLb" firstAttribute="leading" secondItem="2lN-ti-NQA" secondAttribute="trailing" constant="8" id="Apz-Dc-onO"/>
+                            <constraint firstItem="lmd-4l-9fK" firstAttribute="top" secondItem="HqI-ZR-OXF" secondAttribute="top" id="BCs-Aa-HCo"/>
+                            <constraint firstItem="Sco-fs-YsQ" firstAttribute="leading" secondItem="2lN-ti-NQA" secondAttribute="trailing" constant="17" id="EWm-tF-o6S"/>
+                            <constraint firstItem="meV-Db-czi" firstAttribute="top" secondItem="lyW-df-5ef" secondAttribute="bottom" constant="20" id="FwW-2c-b6w"/>
+                            <constraint firstItem="g3m-sP-TX6" firstAttribute="leading" secondItem="HqI-ZR-OXF" secondAttribute="trailing" constant="37" id="HOA-Ys-HPd"/>
+                            <constraint firstItem="JJ4-Zi-HHa" firstAttribute="top" secondItem="OTD-cG-VxD" secondAttribute="top" id="HRt-BK-o2L"/>
+                            <constraint firstItem="QIx-dD-ymR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="11" id="HiV-lr-PBR"/>
+                            <constraint firstItem="Sco-fs-YsQ" firstAttribute="top" secondItem="54z-7y-sLb" secondAttribute="bottom" constant="8" id="HwD-9N-s9G"/>
+                            <constraint firstItem="9v0-62-qh3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="K1E-LP-Eek"/>
+                            <constraint firstItem="9v0-62-qh3" firstAttribute="trailing" secondItem="12W-VC-KpN" secondAttribute="trailing" id="KpA-WI-VJE"/>
+                            <constraint firstItem="JJ4-Zi-HHa" firstAttribute="leading" secondItem="meV-Db-czi" secondAttribute="leading" id="Kpu-iG-OdL"/>
+                            <constraint firstItem="ZH8-Z8-0aU" firstAttribute="leading" secondItem="OTD-cG-VxD" secondAttribute="trailing" constant="25" id="Mgk-1F-UMh"/>
+                            <constraint firstItem="fxm-0A-yAI" firstAttribute="leading" secondItem="noJ-SZ-kFs" secondAttribute="trailing" constant="29.5" id="Ndf-Fh-AGn"/>
+                            <constraint firstItem="noJ-SZ-kFs" firstAttribute="leading" secondItem="QIx-dD-ymR" secondAttribute="trailing" constant="9" id="PBG-6X-7lT"/>
+                            <constraint firstItem="5bi-Oy-BiN" firstAttribute="leading" secondItem="HFi-rf-Cfp" secondAttribute="trailing" constant="20" id="QIg-Ql-evS"/>
+                            <constraint firstItem="lmd-4l-9fK" firstAttribute="bottom" secondItem="HqI-ZR-OXF" secondAttribute="bottom" id="QVa-sg-Kdw"/>
+                            <constraint firstItem="HqI-ZR-OXF" firstAttribute="top" secondItem="g3m-sP-TX6" secondAttribute="top" id="TAM-Cg-6ep"/>
+                            <constraint firstItem="HFi-rf-Cfp" firstAttribute="baseline" secondItem="12W-VC-KpN" secondAttribute="firstBaseline" id="TuE-bt-mvb"/>
+                            <constraint firstItem="Sco-fs-YsQ" firstAttribute="bottom" secondItem="lmd-4l-9fK" secondAttribute="bottom" id="Uav-o3-sPi"/>
+                            <constraint firstItem="iLr-Td-hhs" firstAttribute="trailing" secondItem="54z-7y-sLb" secondAttribute="trailing" id="Wv5-9Y-ZBi"/>
+                            <constraint firstItem="HFi-rf-Cfp" firstAttribute="top" secondItem="Sco-fs-YsQ" secondAttribute="bottom" constant="8" id="X2w-Vg-aJK"/>
+                            <constraint firstItem="iLr-Td-hhs" firstAttribute="leading" secondItem="9v0-62-qh3" secondAttribute="leading" id="Xdp-0e-oml"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HFi-rf-Cfp" secondAttribute="bottom" constant="7.5" id="ZEP-zF-M1m"/>
+                            <constraint firstItem="9v0-62-qh3" firstAttribute="centerX" secondItem="lyW-df-5ef" secondAttribute="centerX" id="a5H-eX-HRv"/>
+                            <constraint firstItem="3yl-Hh-C0e" firstAttribute="leading" secondItem="QUS-hq-KxA" secondAttribute="leading" id="abi-5A-bZj"/>
+                            <constraint firstItem="3yl-Hh-C0e" firstAttribute="top" secondItem="fxm-0A-yAI" secondAttribute="bottom" constant="22" id="b9e-6I-NHn"/>
+                            <constraint firstItem="fxm-0A-yAI" firstAttribute="top" secondItem="JJ4-Zi-HHa" secondAttribute="top" id="c33-Tp-YtO"/>
+                            <constraint firstItem="HFi-rf-Cfp" firstAttribute="baseline" secondItem="12W-VC-KpN" secondAttribute="baseline" id="dUc-US-BQH"/>
+                            <constraint firstItem="ZH8-Z8-0aU" firstAttribute="trailing" secondItem="iLr-Td-hhs" secondAttribute="trailing" id="ePq-wS-Zrc"/>
+                            <constraint firstItem="fxm-0A-yAI" firstAttribute="centerY" secondItem="iLr-Td-hhs" secondAttribute="centerY" id="eco-iI-LJB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="meV-Db-czi" secondAttribute="trailing" constant="24" id="f96-MI-Pjm"/>
+                            <constraint firstItem="g3m-sP-TX6" firstAttribute="centerX" secondItem="12W-VC-KpN" secondAttribute="centerX" id="fMr-P1-gQy"/>
+                            <constraint firstItem="Sco-fs-YsQ" firstAttribute="centerX" secondItem="HFi-rf-Cfp" secondAttribute="centerX" id="fb7-1Y-z2Y"/>
+                            <constraint firstItem="fxm-0A-yAI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="14" id="gGz-y5-xTQ"/>
+                            <constraint firstItem="QUS-hq-KxA" firstAttribute="leading" secondItem="2lN-ti-NQA" secondAttribute="leading" id="gto-iF-k41"/>
+                            <constraint firstItem="9LT-Bx-Jvg" firstAttribute="top" secondItem="HqI-ZR-OXF" secondAttribute="bottom" constant="7" id="h8M-WL-xfC"/>
+                            <constraint firstItem="OTD-cG-VxD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="490" id="iQI-DZ-ghF"/>
+                            <constraint firstItem="ZH8-Z8-0aU" firstAttribute="leading" secondItem="9v0-62-qh3" secondAttribute="leading" id="jXx-bg-Thf"/>
+                            <constraint firstItem="HqI-ZR-OXF" firstAttribute="bottom" secondItem="g3m-sP-TX6" secondAttribute="bottom" id="kaW-sN-Jab"/>
+                            <constraint firstItem="iLr-Td-hhs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="puc-tT-yVz"/>
+                            <constraint firstItem="lmd-4l-9fK" firstAttribute="centerX" secondItem="5bi-Oy-BiN" secondAttribute="centerX" id="qX0-C0-2B8"/>
+                            <constraint firstItem="12W-VC-KpN" firstAttribute="leading" secondItem="9LT-Bx-Jvg" secondAttribute="trailing" constant="29" id="qoS-QO-PZu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g3m-sP-TX6" secondAttribute="trailing" constant="27" id="rUw-Zz-BA0"/>
+                            <constraint firstItem="fxm-0A-yAI" firstAttribute="leading" secondItem="3yl-Hh-C0e" secondAttribute="leading" id="t2k-Wu-RK7"/>
+                            <constraint firstItem="HFi-rf-Cfp" firstAttribute="centerY" secondItem="5bi-Oy-BiN" secondAttribute="centerY" id="tNK-3H-H9g"/>
+                            <constraint firstItem="lyW-df-5ef" firstAttribute="leading" secondItem="OTD-cG-VxD" secondAttribute="trailing" constant="19" id="tVn-ec-Klp"/>
+                            <constraint firstItem="lmd-4l-9fK" firstAttribute="leading" secondItem="Sco-fs-YsQ" secondAttribute="trailing" constant="38" id="u03-gh-kww"/>
+                            <constraint firstItem="OTD-cG-VxD" firstAttribute="width" secondItem="JJ4-Zi-HHa" secondAttribute="width" id="vtt-Tp-bcV"/>
+                            <constraint firstItem="HqI-ZR-OXF" firstAttribute="centerX" secondItem="9LT-Bx-Jvg" secondAttribute="centerX" id="wSb-fb-akI"/>
+                            <constraint firstItem="JJ4-Zi-HHa" firstAttribute="bottom" secondItem="OTD-cG-VxD" secondAttribute="bottom" id="xPS-Wd-KaW"/>
+                            <constraint firstItem="HqI-ZR-OXF" firstAttribute="leading" secondItem="lmd-4l-9fK" secondAttribute="trailing" constant="37" id="xeF-sz-Txi"/>
+                            <constraint firstItem="QIx-dD-ymR" firstAttribute="top" secondItem="noJ-SZ-kFs" secondAttribute="top" id="y2C-f9-ocx"/>
+                            <constraint firstItem="54z-7y-sLb" firstAttribute="top" secondItem="meV-Db-czi" secondAttribute="bottom" constant="57" id="z8R-na-76e"/>
+                            <constraint firstItem="meV-Db-czi" firstAttribute="leading" secondItem="HFi-rf-Cfp" secondAttribute="leading" id="zk9-c6-2Ca"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="PERFORM VIEW" largeTitleDisplayMode="never" id="IbK-Ij-7Ee"/>
+                    <connections>
+                        <outlet property="cassetteGif" destination="meV-Db-czi" id="GGA-gV-LA2"/>
+                        <outlet property="masterRecord" destination="Sco-fs-YsQ" id="50X-hS-9Mw"/>
+                        <outlet property="openTRK1" destination="6ke-3K-98e" id="v1U-KB-I0k"/>
+                        <outlet property="openTRK2" destination="aOT-ev-xqJ" id="gGB-UQ-QR1"/>
+                        <outlet property="openTRK3" destination="CTG-SE-p67" id="1Lo-jH-1qg"/>
+                        <outlet property="openTRK4" destination="95K-EE-HPP" id="uIT-GS-O1t"/>
+                        <outlet property="output_KNob" destination="OTD-cG-VxD" id="uJp-gb-H18"/>
+                        <outlet property="pan_Track1" destination="V5C-ej-d1A" id="QWs-VU-rW2"/>
+                        <outlet property="pan_Track2" destination="Vvs-rk-Gmy" id="BCx-aS-0hO"/>
+                        <outlet property="pan_Track3" destination="mzT-P3-5m0" id="xWD-QX-tpx"/>
+                        <outlet property="pan_Track4" destination="tBX-ZT-pp7" id="Ta7-7N-fbG"/>
+                        <outlet property="pitch_Knob" destination="JJ4-Zi-HHa" id="An7-g9-Tgo"/>
+                        <outlet property="recTRK1" destination="Uzi-nt-hdn" id="3iV-uV-efz"/>
+                        <outlet property="recTRK2" destination="Muo-4z-kMs" id="b8u-So-K37"/>
+                        <outlet property="recTRK3" destination="vx9-ok-6rJ" id="fdp-dL-F0g"/>
+                        <outlet property="recTRK4" destination="QHc-Ez-wiq" id="lOV-v2-P0J"/>
+                        <outlet property="reverseSwitch" destination="9v0-62-qh3" id="OH2-tY-j4P"/>
+                        <outlet property="reverseSwitchImage" destination="iLr-Td-hhs" id="dwS-Zl-Dqi"/>
+                        <outlet property="stopRecord" destination="lmd-4l-9fK" id="SaD-bG-Hid"/>
+                        <outlet property="vol_Knob1" destination="Q5b-KJ-0Hq" id="BSC-fa-TWq"/>
+                        <outlet property="vol_Knob2" destination="lkc-Vd-2mq" id="fCT-t4-JOD"/>
+                        <outlet property="vol_Knob3" destination="7Rx-CC-oc4" id="F6f-g2-ANb"/>
+                        <outlet property="vol_Knob4" destination="KWg-Wq-bYI" id="P06-l0-s0C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1611.5442278860571" y="69.599999999999994"/>
+        </scene>
+        <!--Effects View Controller-->
+        <scene sceneID="OOm-Ph-eOy">
+            <objects>
+                <viewController storyboardIdentifier="EffectVC" id="bh8-Jx-Zfd" customClass="EffectsViewController" customModule="IssacThomas_FourTrack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0gG-bJ-3m4">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ixd-4M-IYs">
+                                <rect key="frame" x="31" y="325" width="435" height="32"/>
+                                <color key="backgroundColor" red="0.91735559700000002" green="0.92112141849999996" blue="0.95005863899999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <segments>
+                                    <segment title="D90"/>
+                                    <segment title="XLII90"/>
+                                    <segment title="UR90"/>
+                                    <segment title="MicroCassette"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" red="0.93722427218203086" green="0.95955170665910605" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="tapeTypeSC:" destination="bh8-Jx-Zfd" eventType="valueChanged" id="4zX-cr-vPA"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CASSETTE TYPE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aad-Sf-Bxz">
+                                <rect key="frame" x="30" y="296" width="129" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nf-5l-WiT">
+                                <rect key="frame" x="20" y="20" width="161.5" height="22"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="   PERFORM VIEW" image="arrowtriangle.backward" catalog="system">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="PerformView:" destination="bh8-Jx-Zfd" eventType="touchUpInside" id="lPI-c5-Zsz"/>
+                                </connections>
+                            </button>
+                            <view opaque="NO" tag="1" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="TlI-wB-Z6C" userLabel="WowRate" customClass="ImageKnob" customModule="IssacThomas_FourTrack" customModuleProvider="target">
+                                <rect key="frame" x="30" y="203" width="85" height="85"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalFrames">
+                                        <integer key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="ReverbMix_"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minimum">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maximum">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view opaque="NO" tag="1" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="vZO-ul-UTU" userLabel="WowRate" customClass="ImageKnob" customModule="IssacThomas_FourTrack" customModuleProvider="target">
+                                <rect key="frame" x="143" y="203" width="85" height="85"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalFrames">
+                                        <integer key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="ReverbSize_"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minimum">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maximum">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view opaque="NO" tag="1" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="JOg-JS-L5j" userLabel="WowRate" customClass="ImageKnob" customModule="IssacThomas_FourTrack" customModuleProvider="target">
+                                <rect key="frame" x="258" y="203" width="85" height="85"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalFrames">
+                                        <integer key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="ReverbCF_"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minimum">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maximum">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view opaque="NO" tag="1" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="1id-Jz-NjD" userLabel="WowRate" customClass="ImageKnob" customModule="IssacThomas_FourTrack" customModuleProvider="target">
+                                <rect key="frame" x="30" y="75" width="85" height="85"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalFrames">
+                                        <integer key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="WowRate_"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minimum">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maximum">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view opaque="NO" tag="1" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="h9a-mY-HLc" userLabel="WowExtent" customClass="ImageKnob" customModule="IssacThomas_FourTrack" customModuleProvider="target">
+                                <rect key="frame" x="143" y="75" width="85" height="85"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalFrames">
+                                        <integer key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="WowExtent_"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minimum">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maximum">
+                                        <real key="value" value="0.029999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WOW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nc-N6-81H">
+                                <rect key="frame" x="30" y="50" width="44" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REVERB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTQ-vE-zOu">
+                                <rect key="frame" x="30" y="174" width="63" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view opaque="NO" tag="1" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="ziR-u2-AIo" userLabel="WowRate" customClass="ImageKnob" customModule="IssacThomas_FourTrack" customModuleProvider="target">
+                                <rect key="frame" x="371" y="203" width="85" height="85"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalFrames">
+                                        <integer key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="ReverbLPF_"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minimum">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maximum">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LrY-dl-BWY"/>
+                        <color key="backgroundColor" red="0.82005518669999999" green="0.80011528730000003" blue="0.79149806499999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LrY-dl-BWY" firstAttribute="trailing" secondItem="h9a-mY-HLc" secondAttribute="trailing" constant="439" id="0Fw-e8-qTB"/>
+                            <constraint firstItem="TlI-wB-Z6C" firstAttribute="leading" secondItem="aad-Sf-Bxz" secondAttribute="leading" id="31m-kw-5vS"/>
+                            <constraint firstItem="1id-Jz-NjD" firstAttribute="top" secondItem="0nc-N6-81H" secondAttribute="bottom" constant="4.5" id="4Hn-kI-AzB"/>
+                            <constraint firstItem="vZO-ul-UTU" firstAttribute="top" secondItem="JOg-JS-L5j" secondAttribute="top" id="5JG-lh-GCX"/>
+                            <constraint firstItem="TlI-wB-Z6C" firstAttribute="bottom" secondItem="vZO-ul-UTU" secondAttribute="bottom" id="6bT-bu-Q1J"/>
+                            <constraint firstItem="ziR-u2-AIo" firstAttribute="leading" secondItem="JOg-JS-L5j" secondAttribute="trailing" constant="28" id="6rj-2g-tte"/>
+                            <constraint firstItem="LrY-dl-BWY" firstAttribute="trailing" secondItem="ziR-u2-AIo" secondAttribute="trailing" constant="211" id="7As-HJ-Gu2"/>
+                            <constraint firstItem="1id-Jz-NjD" firstAttribute="top" secondItem="h9a-mY-HLc" secondAttribute="top" id="Aut-wt-8Ry"/>
+                            <constraint firstItem="Ixd-4M-IYs" firstAttribute="leading" secondItem="LrY-dl-BWY" secondAttribute="leading" constant="31" id="Bdo-2m-H1E"/>
+                            <constraint firstItem="h9a-mY-HLc" firstAttribute="leading" secondItem="0gG-bJ-3m4" secondAttribute="leading" constant="143" id="CcJ-Yr-izR"/>
+                            <constraint firstItem="Ixd-4M-IYs" firstAttribute="top" secondItem="aad-Sf-Bxz" secondAttribute="bottom" constant="8.5" id="DU2-zA-cEc"/>
+                            <constraint firstItem="JOg-JS-L5j" firstAttribute="bottom" secondItem="ziR-u2-AIo" secondAttribute="bottom" id="FTO-WF-LXq"/>
+                            <constraint firstItem="KTQ-vE-zOu" firstAttribute="top" secondItem="1id-Jz-NjD" secondAttribute="bottom" constant="14" id="Gde-pb-CHN"/>
+                            <constraint firstItem="1id-Jz-NjD" firstAttribute="bottom" secondItem="h9a-mY-HLc" secondAttribute="bottom" id="KpG-EI-yo7"/>
+                            <constraint firstItem="h9a-mY-HLc" firstAttribute="leading" secondItem="1id-Jz-NjD" secondAttribute="trailing" constant="28" id="Kz3-Sq-7cA"/>
+                            <constraint firstItem="1id-Jz-NjD" firstAttribute="leading" secondItem="KTQ-vE-zOu" secondAttribute="leading" id="Lc5-wh-mdp"/>
+                            <constraint firstItem="vZO-ul-UTU" firstAttribute="bottom" secondItem="JOg-JS-L5j" secondAttribute="bottom" id="NrX-g5-Guc"/>
+                            <constraint firstItem="0nc-N6-81H" firstAttribute="top" secondItem="4nf-5l-WiT" secondAttribute="bottom" constant="8" id="R3v-EM-xfm"/>
+                            <constraint firstItem="4nf-5l-WiT" firstAttribute="top" secondItem="LrY-dl-BWY" secondAttribute="top" constant="20" id="UVX-S5-Rh9"/>
+                            <constraint firstItem="1id-Jz-NjD" firstAttribute="trailing" secondItem="TlI-wB-Z6C" secondAttribute="trailing" id="Yae-A2-dAl"/>
+                            <constraint firstItem="LrY-dl-BWY" firstAttribute="bottom" secondItem="Ixd-4M-IYs" secondAttribute="bottom" constant="19" id="Z0M-3I-D8O"/>
+                            <constraint firstItem="ziR-u2-AIo" firstAttribute="leading" secondItem="0gG-bJ-3m4" secondAttribute="leading" constant="371" id="Z8C-Xu-fe0"/>
+                            <constraint firstItem="JOg-JS-L5j" firstAttribute="leading" secondItem="vZO-ul-UTU" secondAttribute="trailing" constant="30" id="dEg-Lf-g1p"/>
+                            <constraint firstItem="KTQ-vE-zOu" firstAttribute="leading" secondItem="TlI-wB-Z6C" secondAttribute="leading" id="gkh-1u-yUo"/>
+                            <constraint firstItem="h9a-mY-HLc" firstAttribute="trailing" secondItem="vZO-ul-UTU" secondAttribute="trailing" id="hSF-5b-AGU"/>
+                            <constraint firstItem="JOg-JS-L5j" firstAttribute="top" secondItem="LrY-dl-BWY" secondAttribute="top" constant="203" id="kAg-Kg-PDa"/>
+                            <constraint firstItem="JOg-JS-L5j" firstAttribute="top" secondItem="ziR-u2-AIo" secondAttribute="top" id="n5i-GY-Ttl"/>
+                            <constraint firstItem="0nc-N6-81H" firstAttribute="leading" secondItem="1id-Jz-NjD" secondAttribute="leading" id="nqa-gK-oeS"/>
+                            <constraint firstItem="TlI-wB-Z6C" firstAttribute="top" secondItem="KTQ-vE-zOu" secondAttribute="bottom" constant="8.5" id="ovm-cP-8M1"/>
+                            <constraint firstItem="4nf-5l-WiT" firstAttribute="leading" secondItem="0gG-bJ-3m4" secondAttribute="leadingMargin" id="sHW-3b-ZPM"/>
+                            <constraint firstItem="h9a-mY-HLc" firstAttribute="leading" secondItem="vZO-ul-UTU" secondAttribute="leading" id="sN1-Kj-Ooa"/>
+                            <constraint firstItem="TlI-wB-Z6C" firstAttribute="top" secondItem="vZO-ul-UTU" secondAttribute="top" id="v10-Ig-m9L"/>
+                            <constraint firstItem="0nc-N6-81H" firstAttribute="leading" secondItem="LrY-dl-BWY" secondAttribute="leading" constant="30" id="vI0-mg-FYj"/>
+                            <constraint firstItem="aad-Sf-Bxz" firstAttribute="top" secondItem="TlI-wB-Z6C" secondAttribute="bottom" constant="8" id="vbn-Ae-8gB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZzE-Jf-cXu"/>
+                    <connections>
+                        <outlet property="WowRateKnob" destination="1id-Jz-NjD" id="zFt-jz-CRl"/>
+                        <outlet property="reverbCrossover" destination="JOg-JS-L5j" id="CDt-pf-sso"/>
+                        <outlet property="reverbLPF" destination="ziR-u2-AIo" id="Yrj-y9-9aH"/>
+                        <outlet property="reverbMix" destination="TlI-wB-Z6C" id="Glq-u0-RFy"/>
+                        <outlet property="reverbSize" destination="vZO-ul-UTU" id="Egj-AK-MrD"/>
+                        <outlet property="segmentedControl" destination="Ixd-4M-IYs" id="Ij0-iE-9ps"/>
+                        <outlet property="wowDepthKnob" destination="h9a-mY-HLc" id="BnV-fz-aBA"/>
+                        <outlet property="wowRateKnob" destination="1id-Jz-NjD" id="3bI-Y3-qAR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="et6-lW-PGm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2274.5127436281859" y="69.599999999999994"/>
+        </scene>
+        <!--HelpVC-->
+        <scene sceneID="MgR-kT-NEs">
+            <objects>
+                <viewController storyboardIdentifier="HelpVC" title="HelpVC" id="Vrq-Sn-7dw" customClass="HelpViewController" customModule="IssacThomas_FourTrack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t0Z-Dg-Oh5">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OVERVIEW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAM-n4-4Tw">
+                                <rect key="frame" x="20" y="45" width="627" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="627" id="41B-Wf-BXQ"/>
+                                    <constraint firstAttribute="height" constant="27" id="zcC-r0-3hT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GETTING STARTED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jji-4a-rU4">
+                                <rect key="frame" x="20" y="196" width="627" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="QLu-5q-gKB"/>
+                                    <constraint firstAttribute="width" constant="627" id="So8-zK-9xR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="16" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOj-yI-vWF">
+                                <rect key="frame" x="20" y="80" width="627" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="627" id="2v2-Qk-GZb"/>
+                                    <constraint firstAttribute="height" constant="108" id="mSv-cn-hcR"/>
+                                </constraints>
+                                <string key="text">FourTrack is a Cassette Tape Emulation App, built using a PureData patch, and implemented into iOS using LibPd.
+
+The patch implements a bespoke convolution engine, to make phone recordings sound like true cassette tape, using Impulse Responses gathered from iconic Cassette Tape Recorders. 
+
+Additional features include a VariSpeed Knob, Reverse Switch, Wow Settings, and Reverb. </string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="16" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Sk-uj-JTH">
+                                <rect key="frame" x="20" y="227" width="627" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="627" id="lxd-mb-zKw"/>
+                                    <constraint firstAttribute="width" constant="627" id="tKE-z6-Kgl"/>
+                                </constraints>
+                                <string key="text">Audio can be loaded into a track from the Files App using the Open button. Once loaded the audio should start playing immediately, and you are free to adjust the track controls. 
+
+To Record audio to a track, press the Record Enable button to name the file, and prepare the track. Recording will not start until the master Record Button is pressed, and Recording will stop when the Stop button is pressed. Only one track can be recorded at once. 
+
+In the performance view you can adjust track volume and pan, as well as playback speed, output gain and direction of playback. Pressing the effect button, displays the Wow and Reverb Parameters. 
+</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzd-Ks-Eyo">
+                                <rect key="frame" x="20" y="15" width="161.5" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="1x6-TZ-9LB"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="   PERFORM VIEW" image="arrowtriangle.backward" catalog="system">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="PerformView:" destination="bh8-Jx-Zfd" eventType="touchUpInside" id="Bot-87-yeY"/>
+                                    <action selector="closeHelpVC:" destination="Vrq-Sn-7dw" eventType="touchUpInside" id="JRF-9h-MRl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="j2I-mB-RoJ"/>
+                        <color key="backgroundColor" red="0.82005518669999999" green="0.80011528730000003" blue="0.79149806499999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OAM-n4-4Tw" firstAttribute="leading" secondItem="VOj-yI-vWF" secondAttribute="leading" id="ApA-ZZ-GcZ"/>
+                            <constraint firstItem="jji-4a-rU4" firstAttribute="top" secondItem="VOj-yI-vWF" secondAttribute="bottom" constant="8" id="Bgh-oN-JLN"/>
+                            <constraint firstItem="OAM-n4-4Tw" firstAttribute="top" secondItem="qzd-Ks-Eyo" secondAttribute="bottom" constant="8" id="Bjt-dB-GcF"/>
+                            <constraint firstItem="qzd-Ks-Eyo" firstAttribute="leading" secondItem="OAM-n4-4Tw" secondAttribute="leading" id="FrT-Nh-u8N"/>
+                            <constraint firstItem="OAM-n4-4Tw" firstAttribute="trailing" secondItem="VOj-yI-vWF" secondAttribute="trailing" id="HGT-sM-I8t"/>
+                            <constraint firstItem="jji-4a-rU4" firstAttribute="trailing" secondItem="2Sk-uj-JTH" secondAttribute="trailing" id="QM9-iM-8oX"/>
+                            <constraint firstItem="qzd-Ks-Eyo" firstAttribute="top" secondItem="j2I-mB-RoJ" secondAttribute="top" constant="15" id="TXL-dJ-cgL"/>
+                            <constraint firstItem="VOj-yI-vWF" firstAttribute="trailing" secondItem="jji-4a-rU4" secondAttribute="trailing" id="Ucw-u0-ckP"/>
+                            <constraint firstItem="VOj-yI-vWF" firstAttribute="leading" secondItem="jji-4a-rU4" secondAttribute="leading" id="WEI-Qj-ffd"/>
+                            <constraint firstItem="VOj-yI-vWF" firstAttribute="top" secondItem="OAM-n4-4Tw" secondAttribute="bottom" constant="8" id="bXi-0H-Oxh"/>
+                            <constraint firstItem="qzd-Ks-Eyo" firstAttribute="leading" secondItem="t0Z-Dg-Oh5" secondAttribute="leadingMargin" id="fih-1a-x7Q"/>
+                            <constraint firstItem="j2I-mB-RoJ" firstAttribute="bottom" secondItem="2Sk-uj-JTH" secondAttribute="bottom" constant="8" id="nbh-7x-JDW"/>
+                            <constraint firstItem="jji-4a-rU4" firstAttribute="leading" secondItem="2Sk-uj-JTH" secondAttribute="leading" id="onF-WK-xhO"/>
+                            <constraint firstItem="2Sk-uj-JTH" firstAttribute="top" secondItem="jji-4a-rU4" secondAttribute="bottom" constant="4" id="vFV-yd-5Mj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gYv-t6-oej" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2275" y="770"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CassetteFrame1" width="903" height="327"/>
+        <image name="Reverse_Switch_0" width="56" height="56"/>
+        <image name="arrowtriangle.backward" catalog="system" width="128" height="113"/>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
+        <image name="dial.min.fill" catalog="system" width="128" height="106"/>
+        <image name="questionmark.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="stop.fill" catalog="system" width="128" height="113"/>
+        <image name="waveform.path.ecg.rectangle.fill" catalog="system" width="128" height="93"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

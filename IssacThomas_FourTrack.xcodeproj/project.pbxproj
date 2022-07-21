@@ -1,0 +1,906 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F108128E2739B45800F12B2A /* Knob.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10812892739B45800F12B2A /* Knob.swift */; };
+		F10812902739B45800F12B2A /* Knob+Touches.swift in Sources */ = {isa = PBXBuildFile; fileRef = F108128B2739B45800F12B2A /* Knob+Touches.swift */; };
+		F10812912739B45800F12B2A /* ImageKnob.swift in Sources */ = {isa = PBXBuildFile; fileRef = F108128C2739B45800F12B2A /* ImageKnob.swift */; };
+		F1224011275EA99F009E08A8 /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1224010275EA99F009E08A8 /* Gif.swift */; };
+		F1258E09278FA98A002F5C15 /* CassetteGifReference.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F1258E05278FA98A002F5C15 /* CassetteGifReference.rtf */; };
+		F13AC3DF273405360013131B /* TapeIRController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13AC3DE273405360013131B /* TapeIRController.swift */; };
+		F15B0190277F310600325BB5 /* EffectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15B018F277F310600325BB5 /* EffectsViewController.swift */; };
+		F15B0197278119F700325BB5 /* GlobalStoredVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15B0196278119F700325BB5 /* GlobalStoredVariables.swift */; };
+		F18C9649272ADD7800CA9A95 /* AudioKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18C9647272ADD6C00CA9A95 /* AudioKit.xcframework */; };
+		F18C964A272ADD7900CA9A95 /* AudioKitUI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18C9648272ADD7800CA9A95 /* AudioKitUI.xcframework */; };
+		F19EC09F278760E000EA0BBB /* Tape_Record.wav in Resources */ = {isa = PBXBuildFile; fileRef = F19EC09A278760DC00EA0BBB /* Tape_Record.wav */; };
+		F19EC0A0278760E000EA0BBB /* Tape_Stoprecord.wav in Resources */ = {isa = PBXBuildFile; fileRef = F19EC09E278760E000EA0BBB /* Tape_Stoprecord.wav */; };
+		F1A24298271F3EA6009FAA8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A24297271F3EA6009FAA8D /* AppDelegate.swift */; };
+		F1A2429A271F3EA6009FAA8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A24299271F3EA6009FAA8D /* SceneDelegate.swift */; };
+		F1A2429C271F3EA6009FAA8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A2429B271F3EA6009FAA8D /* ViewController.swift */; };
+		F1A2429F271F3EA6009FAA8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A2429D271F3EA6009FAA8D /* Main.storyboard */; };
+		F1A242A2271F3EA6009FAA8D /* PdTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F1A242A0271F3EA6009FAA8D /* PdTest.xcdatamodeld */; };
+		F1A242A4271F3EA8009FAA8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1A242A3271F3EA8009FAA8D /* Assets.xcassets */; };
+		F1A242A7271F3EA8009FAA8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A242A5271F3EA8009FAA8D /* LaunchScreen.storyboard */; };
+		F1A242B2271F3EA8009FAA8D /* PdTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A242B1271F3EA8009FAA8D /* PdTestTests.swift */; };
+		F1A242BD271F3EA8009FAA8D /* PdTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A242BC271F3EA8009FAA8D /* PdTestUITests.swift */; };
+		F1A242DC271F3F21009FAA8D /* libpd-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A242D2271F3ED9009FAA8D /* libpd-ios.a */; };
+		F1A242DF271F3F21009FAA8D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A242DD271F3F21009FAA8D /* AudioToolbox.framework */; };
+		F1A242E0271F3F21009FAA8D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A242DE271F3F21009FAA8D /* AVFoundation.framework */; };
+		F1A242E7271F46AA009FAA8D /* PDPatch.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A242E6271F46AA009FAA8D /* PDPatch.m */; };
+		F1A6A6C22783B71C00078BC0 /* rev3~.pd in Resources */ = {isa = PBXBuildFile; fileRef = F1A6A6BE2783B71C00078BC0 /* rev3~.pd */; };
+		F1B95F7C27845D8F00915715 /* TDK_D90_Gain_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = F1B95F7227845D6B00915715 /* TDK_D90_Gain_3.wav */; };
+		F1B95F7D27845D8F00915715 /* Maxell_UR90_Gain_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = F1B95F7327845D7400915715 /* Maxell_UR90_Gain_1.wav */; };
+		F1B95F7E27845D8F00915715 /* Maxell_UR90_Gain_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = F1B95F7427845D7900915715 /* Maxell_UR90_Gain_2.wav */; };
+		F1B95F7F27845D8F00915715 /* TDK_D90_Gain_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = F1B95F7527845D7F00915715 /* TDK_D90_Gain_2.wav */; };
+		F1B95F8027845D8F00915715 /* Maxell_XLII90_Gain_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = F1B95F7627845D8200915715 /* Maxell_XLII90_Gain_1.wav */; };
+		F1B95F8127845D8F00915715 /* Maxell_XLII90_Gain_2.wav in Resources */ = {isa = PBXBuildFile; fileRef = F1B95F7727845D8500915715 /* Maxell_XLII90_Gain_2.wav */; };
+		F1B95F8227845D8F00915715 /* Maxell_XLII90_Gain_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = F1B95F7827845D8800915715 /* Maxell_XLII90_Gain_3.wav */; };
+		F1B95F8327845D8F00915715 /* Maxell_UR90_Gain_3.wav in Resources */ = {isa = PBXBuildFile; fileRef = F1B95F7927845D8C00915715 /* Maxell_UR90_Gain_3.wav */; };
+		F1B95F8427845D8F00915715 /* TDK_D90_Gain_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = F1B95F7A27845D8F00915715 /* TDK_D90_Gain_1.wav */; };
+		F1B95F982785BED500915715 /* CassetteCrop.gif in Resources */ = {isa = PBXBuildFile; fileRef = F1B95F972785BED500915715 /* CassetteCrop.gif */; };
+		F1B95F9A2785BF9100915715 /* CassetteFrame1.png in Resources */ = {isa = PBXBuildFile; fileRef = F1B95F992785BF9100915715 /* CassetteFrame1.png */; };
+		F1B95F9C2785D0AB00915715 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B95F9B2785D0AB00915715 /* HelpViewController.swift */; };
+		F1D7AFDA278FA26600FAD1C3 /* TapeIR.pd in Resources */ = {isa = PBXBuildFile; fileRef = F1D7AFD9278FA26600FAD1C3 /* TapeIR.pd */; };
+		F1FF3BD8278F88F700D5187A /* MicroCassette.wav in Resources */ = {isa = PBXBuildFile; fileRef = F1FF3BD7278F88F700D5187A /* MicroCassette.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1A242AE271F3EA8009FAA8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1A2428C271F3EA6009FAA8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1A24293271F3EA6009FAA8D;
+			remoteInfo = PdTest;
+		};
+		F1A242B9271F3EA8009FAA8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1A2428C271F3EA6009FAA8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1A24293271F3EA6009FAA8D;
+			remoteInfo = PdTest;
+		};
+		F1A242D1271F3ED9009FAA8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1A242CA271F3ED9009FAA8D /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = "libpd-ios";
+		};
+		F1A242D3271F3ED9009FAA8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1A242CA271F3ED9009FAA8D /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 119013AB1486450C00086F19;
+			remoteInfo = "libpd-osx";
+		};
+		F1A242D5271F3ED9009FAA8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1A242CA271F3ED9009FAA8D /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 30C3D36D1FAA200100C67F08;
+			remoteInfo = "libpd-ios-multi";
+		};
+		F1A242D7271F3ED9009FAA8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1A242CA271F3ED9009FAA8D /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 30C3D2FA1FAA1FCC00C67F08;
+			remoteInfo = "libpd-osx-multi";
+		};
+		F1A242D9271F3EFF009FAA8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1A242CA271F3ED9009FAA8D /* libpd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = "libpd-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F10812892739B45800F12B2A /* Knob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Knob.swift; sourceTree = "<group>"; };
+		F108128B2739B45800F12B2A /* Knob+Touches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Knob+Touches.swift"; sourceTree = "<group>"; };
+		F108128C2739B45800F12B2A /* ImageKnob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageKnob.swift; sourceTree = "<group>"; };
+		F1224010275EA99F009E08A8 /* Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
+		F1258E05278FA98A002F5C15 /* CassetteGifReference.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = CassetteGifReference.rtf; sourceTree = "<group>"; };
+		F13AC3DE273405360013131B /* TapeIRController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapeIRController.swift; sourceTree = "<group>"; };
+		F15B018F277F310600325BB5 /* EffectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectsViewController.swift; sourceTree = "<group>"; };
+		F15B0196278119F700325BB5 /* GlobalStoredVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalStoredVariables.swift; sourceTree = "<group>"; };
+		F18C9647272ADD6C00CA9A95 /* AudioKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AudioKit.xcframework; sourceTree = "<group>"; };
+		F18C9648272ADD7800CA9A95 /* AudioKitUI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AudioKitUI.xcframework; sourceTree = "<group>"; };
+		F19EC09A278760DC00EA0BBB /* Tape_Record.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Tape_Record.wav; sourceTree = "<group>"; };
+		F19EC09E278760E000EA0BBB /* Tape_Stoprecord.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Tape_Stoprecord.wav; sourceTree = "<group>"; };
+		F1A24294271F3EA6009FAA8D /* IssacThomas_FourTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IssacThomas_FourTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A24297271F3EA6009FAA8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1A24299271F3EA6009FAA8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F1A2429B271F3EA6009FAA8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1A2429E271F3EA6009FAA8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1A242A1271F3EA6009FAA8D /* PdTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PdTest.xcdatamodel; sourceTree = "<group>"; };
+		F1A242A3271F3EA8009FAA8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1A242A6271F3EA8009FAA8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1A242A8271F3EA8009FAA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1A242AD271F3EA8009FAA8D /* IssacThomas_FourTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IssacThomas_FourTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A242B1271F3EA8009FAA8D /* PdTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdTestTests.swift; sourceTree = "<group>"; };
+		F1A242B3271F3EA8009FAA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1A242B8271F3EA8009FAA8D /* IssacThomas_FourTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IssacThomas_FourTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A242BC271F3EA8009FAA8D /* PdTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PdTestUITests.swift; sourceTree = "<group>"; };
+		F1A242BE271F3EA8009FAA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1A242CA271F3ED9009FAA8D /* libpd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libpd.xcodeproj; path = "../pd-for-ios/libpd/libpd.xcodeproj"; sourceTree = "<group>"; };
+		F1A242DD271F3F21009FAA8D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F1A242DE271F3F21009FAA8D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F1A242E4271F420E009FAA8D /* libPd-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libPd-Bridging-Header.h"; sourceTree = "<group>"; };
+		F1A242E5271F46AA009FAA8D /* PDPatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDPatch.h; sourceTree = "<group>"; };
+		F1A242E6271F46AA009FAA8D /* PDPatch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDPatch.m; sourceTree = "<group>"; };
+		F1A6A6BE2783B71C00078BC0 /* rev3~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "rev3~.pd"; sourceTree = "<group>"; };
+		F1B95F7227845D6B00915715 /* TDK_D90_Gain_3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = TDK_D90_Gain_3.wav; sourceTree = "<group>"; };
+		F1B95F7327845D7400915715 /* Maxell_UR90_Gain_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Maxell_UR90_Gain_1.wav; sourceTree = "<group>"; };
+		F1B95F7427845D7900915715 /* Maxell_UR90_Gain_2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Maxell_UR90_Gain_2.wav; sourceTree = "<group>"; };
+		F1B95F7527845D7F00915715 /* TDK_D90_Gain_2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = TDK_D90_Gain_2.wav; sourceTree = "<group>"; };
+		F1B95F7627845D8200915715 /* Maxell_XLII90_Gain_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Maxell_XLII90_Gain_1.wav; sourceTree = "<group>"; };
+		F1B95F7727845D8500915715 /* Maxell_XLII90_Gain_2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Maxell_XLII90_Gain_2.wav; sourceTree = "<group>"; };
+		F1B95F7827845D8800915715 /* Maxell_XLII90_Gain_3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Maxell_XLII90_Gain_3.wav; sourceTree = "<group>"; };
+		F1B95F7927845D8C00915715 /* Maxell_UR90_Gain_3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Maxell_UR90_Gain_3.wav; sourceTree = "<group>"; };
+		F1B95F7A27845D8F00915715 /* TDK_D90_Gain_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = TDK_D90_Gain_1.wav; sourceTree = "<group>"; };
+		F1B95F972785BED500915715 /* CassetteCrop.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CassetteCrop.gif; sourceTree = "<group>"; };
+		F1B95F992785BF9100915715 /* CassetteFrame1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CassetteFrame1.png; sourceTree = "<group>"; };
+		F1B95F9B2785D0AB00915715 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		F1D7AFD9278FA26600FAD1C3 /* TapeIR.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TapeIR.pd; sourceTree = "<group>"; };
+		F1FF3BD7278F88F700D5187A /* MicroCassette.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = MicroCassette.wav; path = IssacThomas_FourTrack/MicroCassette.wav; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1A24291271F3EA6009FAA8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F18C964A272ADD7900CA9A95 /* AudioKitUI.xcframework in Frameworks */,
+				F1A242DF271F3F21009FAA8D /* AudioToolbox.framework in Frameworks */,
+				F18C9649272ADD7800CA9A95 /* AudioKit.xcframework in Frameworks */,
+				F1A242E0271F3F21009FAA8D /* AVFoundation.framework in Frameworks */,
+				F1A242DC271F3F21009FAA8D /* libpd-ios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A242AA271F3EA8009FAA8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A242B5271F3EA8009FAA8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F10812872739B3A300F12B2A /* ThirdPartyModifiedScripts */ = {
+			isa = PBXGroup;
+			children = (
+				F1224010275EA99F009E08A8 /* Gif.swift */,
+				F108128C2739B45800F12B2A /* ImageKnob.swift */,
+				F10812892739B45800F12B2A /* Knob.swift */,
+				F108128B2739B45800F12B2A /* Knob+Touches.swift */,
+			);
+			path = ThirdPartyModifiedScripts;
+			sourceTree = "<group>";
+		};
+		F122401227602237009E08A8 /* AdditionalDesignAssets */ = {
+			isa = PBXGroup;
+			children = (
+				F1258E05278FA98A002F5C15 /* CassetteGifReference.rtf */,
+				F1B95F992785BF9100915715 /* CassetteFrame1.png */,
+				F1B95F972785BED500915715 /* CassetteCrop.gif */,
+			);
+			path = AdditionalDesignAssets;
+			sourceTree = "<group>";
+		};
+		F1A2428B271F3EA6009FAA8D = {
+			isa = PBXGroup;
+			children = (
+				F1A242CA271F3ED9009FAA8D /* libpd.xcodeproj */,
+				F1A24296271F3EA6009FAA8D /* IssacThomas_FourTrack */,
+				F1A242B0271F3EA8009FAA8D /* PdTestTests */,
+				F1A242BB271F3EA8009FAA8D /* PdTestUITests */,
+				F1A24295271F3EA6009FAA8D /* Products */,
+				F1A242DB271F3F21009FAA8D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F1A24295271F3EA6009FAA8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1A24294271F3EA6009FAA8D /* IssacThomas_FourTrack.app */,
+				F1A242AD271F3EA8009FAA8D /* IssacThomas_FourTrackTests.xctest */,
+				F1A242B8271F3EA8009FAA8D /* IssacThomas_FourTrackUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1A24296271F3EA6009FAA8D /* IssacThomas_FourTrack */ = {
+			isa = PBXGroup;
+			children = (
+				F1A2429D271F3EA6009FAA8D /* Main.storyboard */,
+				F1A242A5271F3EA8009FAA8D /* LaunchScreen.storyboard */,
+				F1B95F8527845DC500915715 /* ImpulseResponces */,
+				F122401227602237009E08A8 /* AdditionalDesignAssets */,
+				F10812872739B3A300F12B2A /* ThirdPartyModifiedScripts */,
+				F1B95F8627845E2D00915715 /* PdPatches */,
+				F1B95F8827845EA800915715 /* PdScripts */,
+				F1B95F8727845E4200915715 /* ViewControllers+Delegates */,
+				F1A242A3271F3EA8009FAA8D /* Assets.xcassets */,
+				F1A242A0271F3EA6009FAA8D /* PdTest.xcdatamodeld */,
+				F1A242E4271F420E009FAA8D /* libPd-Bridging-Header.h */,
+				F1A242A8271F3EA8009FAA8D /* Info.plist */,
+			);
+			path = IssacThomas_FourTrack;
+			sourceTree = "<group>";
+		};
+		F1A242B0271F3EA8009FAA8D /* PdTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1A242B1271F3EA8009FAA8D /* PdTestTests.swift */,
+				F1A242B3271F3EA8009FAA8D /* Info.plist */,
+			);
+			path = PdTestTests;
+			sourceTree = "<group>";
+		};
+		F1A242BB271F3EA8009FAA8D /* PdTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F1A242BC271F3EA8009FAA8D /* PdTestUITests.swift */,
+				F1A242BE271F3EA8009FAA8D /* Info.plist */,
+			);
+			path = PdTestUITests;
+			sourceTree = "<group>";
+		};
+		F1A242CB271F3ED9009FAA8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1A242D2271F3ED9009FAA8D /* libpd-ios.a */,
+				F1A242D4271F3ED9009FAA8D /* libpd-osx.a */,
+				F1A242D6271F3ED9009FAA8D /* libpd-ios-multi.a */,
+				F1A242D8271F3ED9009FAA8D /* libpd-osx-multi.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1A242DB271F3F21009FAA8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F18C9647272ADD6C00CA9A95 /* AudioKit.xcframework */,
+				F18C9648272ADD7800CA9A95 /* AudioKitUI.xcframework */,
+				F1A242DD271F3F21009FAA8D /* AudioToolbox.framework */,
+				F1A242DE271F3F21009FAA8D /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1B95F8527845DC500915715 /* ImpulseResponces */ = {
+			isa = PBXGroup;
+			children = (
+				F1FF3BD7278F88F700D5187A /* MicroCassette.wav */,
+				F19EC09A278760DC00EA0BBB /* Tape_Record.wav */,
+				F19EC09E278760E000EA0BBB /* Tape_Stoprecord.wav */,
+				F1B95F7327845D7400915715 /* Maxell_UR90_Gain_1.wav */,
+				F1B95F7427845D7900915715 /* Maxell_UR90_Gain_2.wav */,
+				F1B95F7927845D8C00915715 /* Maxell_UR90_Gain_3.wav */,
+				F1B95F7627845D8200915715 /* Maxell_XLII90_Gain_1.wav */,
+				F1B95F7727845D8500915715 /* Maxell_XLII90_Gain_2.wav */,
+				F1B95F7827845D8800915715 /* Maxell_XLII90_Gain_3.wav */,
+				F1B95F7A27845D8F00915715 /* TDK_D90_Gain_1.wav */,
+				F1B95F7527845D7F00915715 /* TDK_D90_Gain_2.wav */,
+				F1B95F7227845D6B00915715 /* TDK_D90_Gain_3.wav */,
+			);
+			path = ImpulseResponces;
+			sourceTree = "<group>";
+		};
+		F1B95F8627845E2D00915715 /* PdPatches */ = {
+			isa = PBXGroup;
+			children = (
+				F1D7AFD9278FA26600FAD1C3 /* TapeIR.pd */,
+				F1A6A6BE2783B71C00078BC0 /* rev3~.pd */,
+			);
+			path = PdPatches;
+			sourceTree = "<group>";
+		};
+		F1B95F8727845E4200915715 /* ViewControllers+Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				F1B95F9B2785D0AB00915715 /* HelpViewController.swift */,
+				F1A24297271F3EA6009FAA8D /* AppDelegate.swift */,
+				F1A24299271F3EA6009FAA8D /* SceneDelegate.swift */,
+				F1A2429B271F3EA6009FAA8D /* ViewController.swift */,
+				F15B018F277F310600325BB5 /* EffectsViewController.swift */,
+			);
+			path = "ViewControllers+Delegates";
+			sourceTree = "<group>";
+		};
+		F1B95F8827845EA800915715 /* PdScripts */ = {
+			isa = PBXGroup;
+			children = (
+				F15B0196278119F700325BB5 /* GlobalStoredVariables.swift */,
+				F13AC3DE273405360013131B /* TapeIRController.swift */,
+				F1A242E5271F46AA009FAA8D /* PDPatch.h */,
+				F1A242E6271F46AA009FAA8D /* PDPatch.m */,
+			);
+			path = PdScripts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1A24293271F3EA6009FAA8D /* IssacThomas_FourTrack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1A242C1271F3EA8009FAA8D /* Build configuration list for PBXNativeTarget "IssacThomas_FourTrack" */;
+			buildPhases = (
+				F1A24290271F3EA6009FAA8D /* Sources */,
+				F1A24291271F3EA6009FAA8D /* Frameworks */,
+				F1A24292271F3EA6009FAA8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1A242DA271F3EFF009FAA8D /* PBXTargetDependency */,
+			);
+			name = IssacThomas_FourTrack;
+			productName = PdTest;
+			productReference = F1A24294271F3EA6009FAA8D /* IssacThomas_FourTrack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1A242AC271F3EA8009FAA8D /* IssacThomas_FourTrackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1A242C4271F3EA8009FAA8D /* Build configuration list for PBXNativeTarget "IssacThomas_FourTrackTests" */;
+			buildPhases = (
+				F1A242A9271F3EA8009FAA8D /* Sources */,
+				F1A242AA271F3EA8009FAA8D /* Frameworks */,
+				F1A242AB271F3EA8009FAA8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1A242AF271F3EA8009FAA8D /* PBXTargetDependency */,
+			);
+			name = IssacThomas_FourTrackTests;
+			productName = PdTestTests;
+			productReference = F1A242AD271F3EA8009FAA8D /* IssacThomas_FourTrackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1A242B7271F3EA8009FAA8D /* IssacThomas_FourTrackUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1A242C7271F3EA8009FAA8D /* Build configuration list for PBXNativeTarget "IssacThomas_FourTrackUITests" */;
+			buildPhases = (
+				F1A242B4271F3EA8009FAA8D /* Sources */,
+				F1A242B5271F3EA8009FAA8D /* Frameworks */,
+				F1A242B6271F3EA8009FAA8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1A242BA271F3EA8009FAA8D /* PBXTargetDependency */,
+			);
+			name = IssacThomas_FourTrackUITests;
+			productName = PdTestUITests;
+			productReference = F1A242B8271F3EA8009FAA8D /* IssacThomas_FourTrackUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1A2428C271F3EA6009FAA8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					F1A24293271F3EA6009FAA8D = {
+						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
+					};
+					F1A242AC271F3EA8009FAA8D = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = F1A24293271F3EA6009FAA8D;
+					};
+					F1A242B7271F3EA8009FAA8D = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = F1A24293271F3EA6009FAA8D;
+					};
+				};
+			};
+			buildConfigurationList = F1A2428F271F3EA6009FAA8D /* Build configuration list for PBXProject "IssacThomas_FourTrack" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1A2428B271F3EA6009FAA8D;
+			productRefGroup = F1A24295271F3EA6009FAA8D /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F1A242CB271F3ED9009FAA8D /* Products */;
+					ProjectRef = F1A242CA271F3ED9009FAA8D /* libpd.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				F1A24293271F3EA6009FAA8D /* IssacThomas_FourTrack */,
+				F1A242AC271F3EA8009FAA8D /* IssacThomas_FourTrackTests */,
+				F1A242B7271F3EA8009FAA8D /* IssacThomas_FourTrackUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F1A242D2271F3ED9009FAA8D /* libpd-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-ios.a";
+			remoteRef = F1A242D1271F3ED9009FAA8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F1A242D4271F3ED9009FAA8D /* libpd-osx.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-osx.a";
+			remoteRef = F1A242D3271F3ED9009FAA8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F1A242D6271F3ED9009FAA8D /* libpd-ios-multi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-ios-multi.a";
+			remoteRef = F1A242D5271F3ED9009FAA8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F1A242D8271F3ED9009FAA8D /* libpd-osx-multi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-osx-multi.a";
+			remoteRef = F1A242D7271F3ED9009FAA8D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1A24292271F3EA6009FAA8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A6A6C22783B71C00078BC0 /* rev3~.pd in Resources */,
+				F1B95F9A2785BF9100915715 /* CassetteFrame1.png in Resources */,
+				F1A242A7271F3EA8009FAA8D /* LaunchScreen.storyboard in Resources */,
+				F1B95F8227845D8F00915715 /* Maxell_XLII90_Gain_3.wav in Resources */,
+				F1B95F8127845D8F00915715 /* Maxell_XLII90_Gain_2.wav in Resources */,
+				F1B95F8427845D8F00915715 /* TDK_D90_Gain_1.wav in Resources */,
+				F1B95F7C27845D8F00915715 /* TDK_D90_Gain_3.wav in Resources */,
+				F1A242A4271F3EA8009FAA8D /* Assets.xcassets in Resources */,
+				F1B95F982785BED500915715 /* CassetteCrop.gif in Resources */,
+				F19EC09F278760E000EA0BBB /* Tape_Record.wav in Resources */,
+				F1B95F7D27845D8F00915715 /* Maxell_UR90_Gain_1.wav in Resources */,
+				F1D7AFDA278FA26600FAD1C3 /* TapeIR.pd in Resources */,
+				F1A2429F271F3EA6009FAA8D /* Main.storyboard in Resources */,
+				F1B95F8327845D8F00915715 /* Maxell_UR90_Gain_3.wav in Resources */,
+				F1B95F8027845D8F00915715 /* Maxell_XLII90_Gain_1.wav in Resources */,
+				F1258E09278FA98A002F5C15 /* CassetteGifReference.rtf in Resources */,
+				F19EC0A0278760E000EA0BBB /* Tape_Stoprecord.wav in Resources */,
+				F1B95F7F27845D8F00915715 /* TDK_D90_Gain_2.wav in Resources */,
+				F1B95F7E27845D8F00915715 /* Maxell_UR90_Gain_2.wav in Resources */,
+				F1FF3BD8278F88F700D5187A /* MicroCassette.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A242AB271F3EA8009FAA8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A242B6271F3EA8009FAA8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1A24290271F3EA6009FAA8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F10812912739B45800F12B2A /* ImageKnob.swift in Sources */,
+				F15B0190277F310600325BB5 /* EffectsViewController.swift in Sources */,
+				F1A242E7271F46AA009FAA8D /* PDPatch.m in Sources */,
+				F1B95F9C2785D0AB00915715 /* HelpViewController.swift in Sources */,
+				F10812902739B45800F12B2A /* Knob+Touches.swift in Sources */,
+				F1A2429C271F3EA6009FAA8D /* ViewController.swift in Sources */,
+				F1224011275EA99F009E08A8 /* Gif.swift in Sources */,
+				F1A24298271F3EA6009FAA8D /* AppDelegate.swift in Sources */,
+				F13AC3DF273405360013131B /* TapeIRController.swift in Sources */,
+				F1A2429A271F3EA6009FAA8D /* SceneDelegate.swift in Sources */,
+				F15B0197278119F700325BB5 /* GlobalStoredVariables.swift in Sources */,
+				F1A242A2271F3EA6009FAA8D /* PdTest.xcdatamodeld in Sources */,
+				F108128E2739B45800F12B2A /* Knob.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A242A9271F3EA8009FAA8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A242B2271F3EA8009FAA8D /* PdTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A242B4271F3EA8009FAA8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1A242BD271F3EA8009FAA8D /* PdTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1A242AF271F3EA8009FAA8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1A24293271F3EA6009FAA8D /* IssacThomas_FourTrack */;
+			targetProxy = F1A242AE271F3EA8009FAA8D /* PBXContainerItemProxy */;
+		};
+		F1A242BA271F3EA8009FAA8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1A24293271F3EA6009FAA8D /* IssacThomas_FourTrack */;
+			targetProxy = F1A242B9271F3EA8009FAA8D /* PBXContainerItemProxy */;
+		};
+		F1A242DA271F3EFF009FAA8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libpd-ios";
+			targetProxy = F1A242D9271F3EFF009FAA8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F1A2429D271F3EA6009FAA8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1A2429E271F3EA6009FAA8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F1A242A5271F3EA8009FAA8D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1A242A6271F3EA8009FAA8D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1A242BF271F3EA8009FAA8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "PdTest/libPd-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1A242C0271F3EA8009FAA8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "PdTest/libPd-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1A242C2271F3EA8009FAA8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WNG98T4GL5;
+				INFOPLIST_FILE = IssacThomas_FourTrack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-lstdc++";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.issacthomas.PdTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IssacThomas_FourTrack/libPd-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../pd-for-ios/**";
+				WARNING_CFLAGS = "-w";
+			};
+			name = Debug;
+		};
+		F1A242C3271F3EA8009FAA8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WNG98T4GL5;
+				INFOPLIST_FILE = IssacThomas_FourTrack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "-lstdc++";
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.issacthomas.PdTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IssacThomas_FourTrack/libPd-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "../pd-for-ios/**";
+				WARNING_CFLAGS = "-w";
+			};
+			name = Release;
+		};
+		F1A242C5271F3EA8009FAA8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WNG98T4GL5;
+				INFOPLIST_FILE = IssacThomas_FourTrack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.issacthomas.PdTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IssacThomas_FourTrack/libPd-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IssacThomas_FourTrack.app/IssacThomas_FourTrack";
+			};
+			name = Debug;
+		};
+		F1A242C6271F3EA8009FAA8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WNG98T4GL5;
+				INFOPLIST_FILE = IssacThomas_FourTrack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.issacthomas.PdTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "IssacThomas_FourTrack/libPd-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IssacThomas_FourTrack.app/IssacThomas_FourTrack";
+			};
+			name = Release;
+		};
+		F1A242C8271F3EA8009FAA8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WNG98T4GL5;
+				INFOPLIST_FILE = PdTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.issacthomas.PdTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PdTest;
+			};
+			name = Debug;
+		};
+		F1A242C9271F3EA8009FAA8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WNG98T4GL5;
+				INFOPLIST_FILE = PdTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.issacthomas.PdTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PdTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1A2428F271F3EA6009FAA8D /* Build configuration list for PBXProject "IssacThomas_FourTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A242BF271F3EA8009FAA8D /* Debug */,
+				F1A242C0271F3EA8009FAA8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1A242C1271F3EA8009FAA8D /* Build configuration list for PBXNativeTarget "IssacThomas_FourTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A242C2271F3EA8009FAA8D /* Debug */,
+				F1A242C3271F3EA8009FAA8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1A242C4271F3EA8009FAA8D /* Build configuration list for PBXNativeTarget "IssacThomas_FourTrackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A242C5271F3EA8009FAA8D /* Debug */,
+				F1A242C6271F3EA8009FAA8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1A242C7271F3EA8009FAA8D /* Build configuration list for PBXNativeTarget "IssacThomas_FourTrackUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1A242C8271F3EA8009FAA8D /* Debug */,
+				F1A242C9271F3EA8009FAA8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F1A242A0271F3EA6009FAA8D /* PdTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F1A242A1271F3EA6009FAA8D /* PdTest.xcdatamodel */,
+			);
+			currentVersion = F1A242A1271F3EA6009FAA8D /* PdTest.xcdatamodel */;
+			path = PdTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F1A2428C271F3EA6009FAA8D /* Project object */;
+}
