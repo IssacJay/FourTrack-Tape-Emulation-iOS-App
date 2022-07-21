@@ -1,4 +1,4 @@
-# FourTrack-Tape-Emulation-iOS-App
+# FourTrack Tape Emulation App for iOS
 FourTrack is a cassette loop emulation iOS app, allowing the user to harness the sound and feel of authentic four track tape decks. 
 
 
